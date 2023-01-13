@@ -3,6 +3,6 @@
 <mapper namespace="com.example.demo.mapper.master.UserMapper">
 
   <insert id="add">
-    insert into user(id, name) values (#{id}, #{name})
+    insert into `user`(id, name) values (#{id}, #{name})
   </insert>
 </mapper>

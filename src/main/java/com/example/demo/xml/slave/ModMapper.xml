@@ -3,6 +3,6 @@
 <mapper namespace="com.example.demo.mapper.slave.ModMapper">
 
   <insert id="add">
-    insert into mod(id, user_id, mod) values (#{id}, #{userId}, #{mod})
+    insert into `MOD`(id, user_id, `mod`) values (#{id}, #{userId}, #{mod})
   </insert>
 </mapper>
