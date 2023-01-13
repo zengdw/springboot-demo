@@ -2,8 +2,9 @@ package com.example.demo.controller;
 
 import com.example.demo.domain.Mod;
 import com.example.demo.domain.User;
-import com.example.demo.mapper.master.UserMapper;
-import com.example.demo.mapper.slave.ModMapper;
+import com.example.demo.mapper.ModMapper;
+import com.example.demo.mapper.UserMapper;
+import com.example.demo.utils.DataSourceUtil;
 import jakarta.annotation.Resource;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,6 +30,11 @@ public class TestController {
         user.setName("test");
         userMapper.add(user);
 
+        addMod();
+    }
+
+    private void addMod() {
+        DataSourceUtil.setDb("db2");
         Mod mod = new Mod();
         mod.setId(1);
         mod.setUserId(1);

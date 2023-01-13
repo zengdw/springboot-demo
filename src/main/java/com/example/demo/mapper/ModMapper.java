@@ -1,4 +1,4 @@
-package com.example.demo.mapper.slave;
+package com.example.demo.mapper;
 
 import com.example.demo.domain.Mod;
 

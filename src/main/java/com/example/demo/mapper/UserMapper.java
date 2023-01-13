@@ -1,4 +1,4 @@
-package com.example.demo.mapper.master;
+package com.example.demo.mapper;
 
 import com.example.demo.domain.User;
 
