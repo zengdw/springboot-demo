@@ -23,7 +23,6 @@ import javax.sql.DataSource;
         sqlSessionFactoryRef = "slaveSqlSessionFactory")
 public class SlaveDataSourceConfig {
     @Bean("slaveDataSource")
-    @Qualifier
     @ConfigurationProperties(prefix = "spring.datasource.slave")
     public DataSource dataSource() {
         return DataSourceBuilder.create(this.getClass().getClassLoader()).build();
